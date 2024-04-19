@@ -1,0 +1,35 @@
+import Data.List (sort)
+import Data.Ord (Down(..))
+
+-- Declare the variables
+firstName :: String
+firstName = "John"
+
+lastName :: String
+lastName = "Doe"
+
+-- Create name by concatenating and removing blanks
+name :: String
+name = filter (/= ' ') (firstName ++ lastName)
+
+-- Sort and display name in alphabetical order
+sortedName :: String
+sortedName = sort name
+main :: IO ()
+main = do
+  putStrLn sortedName
+
+  -- Reverse and display name
+  putStrLn (reverse name)
+
+  -- Sort and display name in reverse alphabetical order
+  putStrLn (reverse sortedName)
+
+
+
+firstName = "Hunter"
+lastName = "Sloan"
+name = "HunterSloan
+aehlnnoorstu
+naolSretnuH
+uutsonnrlhea

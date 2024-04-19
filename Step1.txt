@@ -1,0 +1,22 @@
+;; Declare the variables
+(def FirstName "John")
+(def LastName "Doe")
+
+;; Create Name by concatenating and removing blanks
+(def Name (clojure.string/replace (str FirstName LastName) " " ""))
+
+;; Sort and display Name in alphabetical order
+(println (sort Name))
+
+;; Reverse and display Name
+(println (clojure.string/reverse Name))
+
+;; Sort and display Name in reverse alphabetical order
+(println (reverse (sort Name)))
+
+
+FirstName = "Hunter"
+LastName = "Sloan"
+aehlnnoorstu
+naolSretnuH
+uutsonnrlhea
